@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gwynedd Mercy Academy High School’s project included the addition of new academic wing HVAC systems and the renovation of their library.">
+    <meta name="author" content="Carter M. Young">
+    <meta itemprop="name" content="Gwynedd Mercy Academy High School Project | Carter M. Young">
+    <meta itemprop="description" content="Gwynedd Mercy Academy High School’s project included the addition of new academic wing HVAC systems and the renovation of their library.">
+    <meta itemprop="image" content="http://www.cartermyoung.com/images/cartermyoung.jpg">
+    <meta property="og:title" content="Gwynedd Mercy Academy High School Project | Carter M. Young" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.cartermyoung.com/projects/gma-learning-commons/" />
+    <meta property="og:image" content="http://www.cartermyoung.com/images/cartermyoung.jpg" />
+    <meta property="og:description" content="Gwynedd Mercy Academy High School’s project included the addition of new academic wing HVAC systems and the renovation of their library." />
+    <meta property="og:site_name" content="Carter M. Young" />
+    <title>Gwynedd Mercy Academy High School Project | Carter M. Young</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        /* GLOBAL STYLES - for carousel and fixed nav
+        -------------------------------------------------- */
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+        /* CUSTOMIZE THE NAVBAR
+        -------------------------------------------------- */
+        .navbar-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 20;
+        }
+        .navbar-wrapper > .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .navbar-wrapper .navbar {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .navbar-wrapper .navbar .container {
+            width: auto;
+        }
+        /* MARKETING CONTENT
+        -------------------------------------------------- */
+        .marketing .col-lg-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .marketing h2 {
+            font-weight: normal;
+        }
+        .marketing .col-lg-4 p {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        /* RESPONSIVE CSS
+        -------------------------------------------------- */
+        @media (min-width: 768px) {
+            /* Navbar positioning foo */
+            .navbar-wrapper {
+                margin-top: 20px;
+            }
+            .navbar-wrapper .container {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .navbar-wrapper .navbar {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .navbar-wrapper .navbar {
+                border-radius: 4px;
+            }
+        }
+        /*
+        * Globals for Blog Theme
+        * Blog name and description
+        */
+        .blog-header {
+            padding-bottom: 20px;
+        }
+        .blog-title {
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 60px;
+            font-weight: normal;
+        }
+        .blog-description {
+            font-size: 20px;
+            color: #999;
+        }
+        /*
+        * Main column and sidebar layout
+        */
+        .blog-main {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        /* Sidebar modules for boxing content */
+        .sidebar-module {
+            padding: 15px;
+            margin: 0 -15px 15px;
+        }
+        .sidebar-module-inset {
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        .sidebar-module-inset p:last-child,
+        .sidebar-module-inset ul:last-child,
+        .sidebar-module-inset ol:last-child {
+            margin-bottom: 0;
+        }
+        /* Pagination */
+        .pager {
+          margin-bottom: 60px;
+          text-align: left;
+        }
+        .pager > li > a {
+          width: 140px;
+          padding: 10px 20px;
+          text-align: center;
+          border-radius: 30px;
+        }
+        /*
+        * Blog posts
+        */
+        .blog-post {
+            margin-bottom: 60px;
+        }
+        .blog-post-title {
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+        .blog-post-meta {
+            margin-bottom: 20px;
+            color: #999;
+        }
+        /* Prevents Slides JS from flashing */
+        #slides {
+            display: none;
+        }
+        #slides .slidesjs-navigation {
+            margin-top: 5px;
+        }
+        a.slidesjs-next,
+        a.slidesjs-previous,
+        a.slidesjs-play,
+        a.slidesjs-stop {
+            background-image: url(../../images/slidesjs/btns-next-prev.png);
+            background-repeat: no-repeat;
+            display: block;
+            width: 12px;
+            height: 18px;
+            overflow: hidden;
+            text-indent: -9999px;
+            float: left;
+            margin-right: 5px;
+        }
+        a.slidesjs-next {
+            margin-right: 10px;
+            background-position: -12px 0;
+        }
+        a:hover.slidesjs-next {
+            background-position: -12px -18px;
+        }
+        a.slidesjs-previous {
+            background-position: 0 0;
+        }
+        a:hover.slidesjs-previous {
+            background-position: 0 -18px;
+        }
+        a.slidesjs-play {
+            width: 15px;
+            background-position: -25px 0;
+        }
+        a:hover.slidesjs-play {
+            background-position: -25px -18px;
+        }
+        a.slidesjs-stop {
+            width: 18px;
+            background-position: -41px 0;
+        }
+        a:hover.slidesjs-stop {
+            background-position: -41px -18px;
+        }
+        .slidesjs-pagination {
+            margin: 6px 0 0;
+            float: right;
+            list-style: none;
+        }
+        .slidesjs-pagination li {
+            float: left;
+            margin: 0 1px;
+        }
+        .slidesjs-pagination li a {
+            display: block;
+            width: 13px;
+            height: 0;
+            padding-top: 13px;
+            background-image: url(../../images/slidesjs/pagination.png);
+            background-position: 0 0;
+            float: left;
+            overflow: hidden;
+        }
+        .slidesjs-pagination li a.active,
+        .slidesjs-pagination li a:hover.active {
+            background-position: 0 -13px
+        }
+        .slidesjs-pagination li a:hover {
+            background-position: 0 -26px
+        }
+        #slides a:link,
+        #slides a:visited {
+            color: #333
+        }
+        #slides a:hover,
+        #slides a:active {
+            color: #9e2020
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Carter M. Young</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="/projects/gma-learning-commons/">Gwynedd Mercy Academy</a></li>
+                            <li><a href="/projects/mount-science-wing/">Mount Saint Joseph Academy</a></li>
+                            <li><a href="/projects/doylestown-presbyterian-church/">Doylestown Presbyterian Church</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="slides" style="padding-left: 15px">
+                <img src="../../images/projects/gma-learning-commons/carousel1.jpg">
+                <img src="../../images/projects/gma-learning-commons/carousel2.jpg">
+                <img src="../../images/projects/gma-learning-commons/carousel3.jpg">
+                <img src="../../images/projects/gma-learning-commons/carousel4.jpg">
+                <img src="../../images/projects/gma-learning-commons/carousel5.jpg">
+                <img src="../../images/projects/gma-learning-commons/carousel6.jpg">
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="blog-header" style="padding-top: 40px">
+            <h1>Gwynedd Mercy Academy High School Renovations</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+                <div class="blog-post">
+                    <h2>Project Summary</h2>
+                    <p>New academic wing HVAC systems and library renovation</p>
+                    <ul>
+                        <li>Managed, coordinated, and supervised the installation of new air conditioning systems throughout the school’s academic wing.
+                            <ul>
+                                <li>Received RFPs from pre-qualified engineering firms, awarded design work, and completed contracts.</li>
+                                <li>Solicited firm price proposals from an invited list of pre-approved mechanical contractors.</li>
+                            </ul>
+                        <li>Renovated the existing library into a state-of-the-art learning commons.
+                            <ul>
+                                <li>Worked with architectural design firm to develop construction plans and specifications.</li>
+                                <li>Worked with the school’s facilities committee and architect to collect firm price bids.</li>
+                            </ul>
+                        </li>
+                        <li>Managed communications between architects, contractors, school administration, and facilities department.</li>
+                        <li>Conducted pre-planning and formulated pre-construction schedule and techniques.</li>
+                        <li>Reviewed and approved all change orders.</li>
+                        <li>Both projects were completed on-time within a tight timeframe during the school’s twelve week summer recess.</li>
+                    </ul>
+                    <h2>Budget</h2>
+                    <p>$1.18M</p>
+                    <h2>Timeframe</h2>
+                    <p>May 2014 - August 2015</p>
+                    <h2>Location</h2>
+                    <p>Gwynedd Valley, PA</p>
+                    <h2>Press</h2>
+                    <p><a href="/pdfs/projects/gma-learning-commons/suburban-life-article.pdf">Suburban Life Article</a></p>
+                </div>
+                <!-- /.blog-post -->
+
+                <nav>
+                    <ul class="pager">
+                        <li><a href="/projects/mount-science-wing/" style="width: 200px">Next Project</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- /.blog-main -->
+
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <h4>Share This</h4>
+                    <ul>
+                        <li><a href="mailto:?subject=Gwynedd%20Mercy%20Academy%20High%20School%20Project-Carter%20M.%20Young&amp;body=I%20just%20read%20this%20article%20about%20a%20project%20Carter%20M.%20Young%20completed%20and%20thought%20you%20would%20be%20interested%20in%20seeing%20it.%3A%20http%3A//www.cartermyoung.com/projects/gma-learning-commons/">Email</a></li>
+                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.cartermyoung.com/projects/gma-learning-commons&amp;title=Gwynedd%20Mercy%20Academy%20High%20School%20Project-Carter%20M.%20Young" target="_linkedin">LinkedIn</a></li>
+                        <li><a href="https://plus.google.com/share?url=http://www.cartermyoung.com/projects/gma-learning-commons/" target="_gplus">Google</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                      <li>Text or Call: <a href="tel:2153269027">(215)326-9027</a></li>
+                      <li><a href="mailto:carteryoung@verizon.net">Email</a></li>
+                      <li><a href="https://www.linkedin.com/in/cartermyoung/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.blog-sidebar -->
+
+        </div>
+        <!-- /.row -->
+        <!-- End Project Section -->
+
+        <!-- FOOTER -->
+        <footer style="margin-top: 60px;">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 Carter M. Young</p>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.js"></script>
+    <script>
+        $(function() {
+            $("#slides").slidesjs({
+                width: 1155,
+                height: 530,
+                navigation: false,
+                play: {
+                    active: true,
+                    auto: true,
+                    interval: 6000,
+                    swap: true,
+                    pauseOnHover: true,
+                    restartDelay: 2500
+                },
+                effect: {
+                    slide: {
+                        // Slide effect settings.
+                        speed: 3000
+                            // [number] Speed in milliseconds of the slide animation.
+                    },
+                    fade: {
+                        speed: 300,
+                        // [number] Speed in milliseconds of the fade animation.
+                        crossfade: true
+                            // [boolean] Cross-fade the transition.
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
