@@ -1,2 +1,1 @@
-# cartermyoung.github.io
-Files for cartermyoung.com
+This folder contains all of the files for www.cartermyoung.com.
