@@ -11,7 +11,6 @@
     <meta itemprop="description" content="A Philadelphia based owner’s representative. Browse construction project management services I provide, my clients, projects, and how to contact me.">
     <meta itemprop="image" content="http://www.cartermyoung.com/images/cartermyoung.jpg">
     <meta property="og:title" content="Carter M. Young | Owner’s Representative for Construction Projects" />
-    <!--<meta property="og:type" content="article" />-->
     <meta property="og:url" content="http://www.cartermyoung.com/" />
     <meta property="og:image" content="http://www.cartermyoung.com/images/cartermyoung.jpg" />
     <meta property="og:description" content="A Philadelphia based owner’s representative. Browse construction project management services I provide, my clients, projects, and how to contact me." />
@@ -50,12 +49,31 @@
         .navbar-wrapper .navbar .container {
             width: auto;
         }
+        .section-header {
+            margin-bottom: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-size: 100%;
+            background-image: none;
+            background-repeat: no-repeat;
+        }
+        .hero p {
+          margin-top: 40px;
+        }
+
         /* CUSTOMIZE THE CAROUSEL
         -------------------------------------------------- */
         /* Carousel base class */
         .carousel {
             height: 440px;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
         .carousel-caption {
             z-index: 10;
@@ -88,7 +106,7 @@
         /* RESPONSIVE CSS
         -------------------------------------------------- */
         @media (min-width: 768px) {
-            /* Navbar positioning foo */
+            /* Navbar positioning */
             .navbar-wrapper {
                 margin-top: 20px;
             }
@@ -116,7 +134,29 @@
             .carousel .item {
                 height: 500px;
             }
-            h1 { font-size: 36px }
+            h1 { font-size: 36px;
+              text-align: center; }
+              .hero p {
+                margin-top: 40px; text-align: center;
+              }
+        }
+        @media (min-width: 1200px) {
+          .hero {
+              height: 500px;
+              margin-bottom: 20px;
+              background-size: 100%;
+              padding: 20px 0 0 0;
+              background-image: url('images/homepage/building.jpg');
+              background-repeat: no-repeat;
+          }
+          .hero h1 {
+            width: 40%; margin-top: 60px;
+            text-align: left;
+          }
+          .hero p {
+            margin-top: 40px;
+            text-align: left;
+          }
         }
     </style>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -128,13 +168,8 @@
 </head>
 
 <body>
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W5KNNS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W5KNNS');</script>
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W5KNNS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W5KNNS');</script>
     <!-- Begin navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -168,7 +203,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </nav>
     <!-- /.navbar -->
 
-    <!-- Begin carousel -->
+    <div class="hero">
+        <div class="container marketing">
+            <h1>I’m an owner’s representative with experience in commercial, industrial, and institutional construction project management.</h1>
+            <p><a class="btn btn-lg btn-primary" href="/about/" role="button">Learn more</a></p>
+        </div>
+    </div>
+
+    <!-- Begin container -->
+    <div class="container marketing">
+
+        <div class="section-header">
+            <h2>Services and Expertise</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Owner’s Representative</h3>
+                <ul style="list-style: none; padding-left: 0px">
+                  <li>Pre-construction analysis</li>
+                  <li>Schedule and budget monitoring</li>
+                  <li>Quality assurance and control auditing</li>
+                  <li>Contractor payment evaluation</li>
+                  <li>Daily, weekly, and monthly reporting</li>
+                  <li>Issue resolution facilitation</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h3>Construction Management</h3>
+                <ul style="list-style: none; padding-left: 0px">
+                  <li>Milestone phasing</li>
+                  <li>Bid and procurement assistance</li>
+                  <li>Meeting leadership and coordination</li>
+                  <li>Contract management</li>
+                  <li>Documentation and file maintenance</li>
+                  <li>Contract closeout supervision</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h3>Construction Consulting</h3>
+                <ul style="list-style: none; padding-left: 0px">
+                  <li>Blueprint and CAD analysis</li>
+                  <li>Legal expertise</li>
+                  <li>Extensive list of pre-qualified construction firms</li>
+                  <li>Cost estimating and management</li>
+                  <li>Risk management and mitigation</li>
+                  <li>Surety consulting and support</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Clients -->
+        <div class="section-header">
+            <h2>Clients</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
+                <a href="/projects/gma-learning-commons/"><img src="images/logos/gma.jpg" alt="Gwynedd Mercy Academy logo" width="140"></a>
+            </div>
+            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
+                <a href="/projects/mount-science-wing/"><img src="images/logos/msj.jpg" alt="Mount Saint Joseph Academy logo" width="140"></a>
+            </div>
+            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
+                <a href="/projects/doylestown-presbyterian-church/"><img src="images/logos/dpc.gif" alt="Doylestown Presbyterian Church" title="Doylestown Presbyterian Church" width="140"></a>
+            </div>
+            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
+                <a href="/projects/curtiss-wright-est-group/"><img src="images/logos/cw.gif" alt="Curtis Wright logo" width="140"></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects -->
+        <div class="section-header" style="margin-bottom: 40px">
+            <h2>Projects</h2>
+        </div>
+
+    </div> <!-- /.container -->
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -226,77 +337,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
-    <!-- /.carousel -->
+    </div><!-- /.carousel -->
 
     <!-- Begin container -->
     <div class="container marketing">
-      <div style="text-align: center; margin-bottom: 100px; padding-top: 10px; padding-left: 30px; padding-right: 30px">
-          <h1>I’m an owner’s representative with experience in commercial, industrial, and institutional construction project management.</h1>
-          <p style="margin-top: 40px"><a class="btn btn-default" href="/about/" role="button">Learn more</a></p>
-      </div>
-        <div style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
-            <h2>Services and Expertise</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <h3>Owner’s Representative</h3>
-                <ul style="list-style: none; padding-left: 0px">
-                  <li>Pre-construction analysis</li>
-                  <li>Schedule and budget monitoring</li>
-                  <li>Quality assurance and control auditing</li>
-                  <li>Contractor payment evaluation</li>
-                  <li>Daily, weekly, and monthly reporting</li>
-                  <li>Issue resolution facilitation</li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h3>Construction Management</h3>
-                <ul style="list-style: none; padding-left: 0px">
-                  <li>Milestone phasing</li>
-                  <li>Bid and procurement assistance</li>
-                  <li>Meeting leadership and coordination</li>
-                  <li>Contract management</li>
-                  <li>Documentation and file maintenance</li>
-                  <li>Contract closeout supervision</li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h3>Construction Consulting</h3>
-                <ul style="list-style: none; padding-left: 0px">
-                  <li>Blueprint and CAD analysis</li>
-                  <li>Legal expertise</li>
-                  <li>Extensive list of pre-qualified construction firms</li>
-                  <li>Cost estimating and management</li>
-                  <li>Risk management and mitigation</li>
-                  <li>Surety consulting and support</li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Clients -->
-        <div style="text-align: center; margin-bottom: 40px; margin-top: 80px;">
-            <h2>Clients</h2>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
-                <a href="/projects/gma-learning-commons/"><img src="images/logos/gma.jpg" alt="Gwynedd Mercy Academy logo" width="140"></a>
-            </div>
-            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
-                <a href="/projects/mount-science-wing/"><img src="images/logos/msj.jpg" alt="Mount Saint Joseph Academy logo" width="140"></a>
-            </div>
-            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
-                <a href="/projects/doylestown-presbyterian-church/"><img src="images/logos/dpc.gif" alt="Doylestown Presbyterian Church" title="Doylestown Presbyterian Church" width="140"></a>
-            </div>
-            <div class="col-xs-6 col-sm-3" style="text-align: center; margin-top: 20px;">
-                <a href="/projects/curtiss-wright-est-group/"><img src="images/logos/cw.gif" alt="Curtis Wright logo" width="140"></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <!-- Testimonials -->
-        <div style="text-align: center; margin-bottom: 40px; margin-top: 80px;">
+        <div class="section-header">
             <h2>Testimonials</h2>
         </div>
         <div class="row">
@@ -318,11 +365,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h4>General Manager, EST Group</h4>
                 <p>“I worked closely with Carter on three large projects over an eight year time span. He was intimately involved in providing oversight and feedback to the general contracting team and each of the trades involved.”</p>
             </div>
-        </div>
-        <!-- /.row -->
+        </div><!-- /.row -->
 
         <!-- Contact -->
-        <div style="text-align: center; margin-bottom: 40px; margin-top: 80px;">
+        <div class="section-header">
             <h2>Get In Touch</h2>
         </div>
         <div class="row">
@@ -347,16 +393,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <h3>LinkedIn</h3>
                 <p><a class="btn btn-default" href="https://www.linkedin.com/in/cartermyoung/" role="button">LinkedIn Profile</a></p>
             </div>
-        </div>
-        <!-- /.row -->
+        </div><!-- /.row -->
 
         <footer style="margin-top: 60px;">
             <p class="pull-right"><a href="#">Back to top</a></p>
             <p>&copy; 2017 Carter M. Young</p>
         </footer>
 
-    </div>
-    <!-- /.container -->
+    </div><!-- /.container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
