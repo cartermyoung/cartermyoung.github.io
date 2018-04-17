@@ -134,6 +134,9 @@
         .required {
             color: red;
         }
+        .alert {
+            display: none;
+        }
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -218,6 +221,12 @@
                         <button type="submit" class="btn btn-default" id="postForm">Submit</button>
                     </div>
                 </form>
+                <div class="alert alert-success" role="alert">
+                    <p>Your information has been submitted. Thank you.</p>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    <p>The was an error submitting your information. Please try again later or use another way to get in touch.</p>
+                </div>
             </div>
         </div>
 
@@ -246,19 +255,20 @@
 
                 // Use Ajax to submit form data
                 var url = 'https://script.google.com/macros/s/AKfycbxhXIniJTvKW-Kn45WkOh8QtRWcBdFrq4WYzHgHVSJBR7KsrkU/exec';
-                var redirectUrl = 'success-page.html';
+
                 // show the loading 
                 $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     console.log("Success! Data: " + data.statusText);
-                    $(location).attr('href',redirectUrl);
+                    $('#alert-success').show();
                 })
                 .fail(function(data) {
                     console.warn("Error! Data: " + data.statusText);
+                    $('#alert-danger').show();
                     // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                         //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                        $(location).attr('href',redirectUrl);                
+                        $('#alert-success').show();               
                     }
                 });
             });
