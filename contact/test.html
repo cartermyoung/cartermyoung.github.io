@@ -261,16 +261,16 @@
                 $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     console.log("Success! Data: " + data.statusText);
-                    $('#alert-success').show("slow");
-                    $('#contact-form').reset();
+                    $('.alert-success').show("slow");
+                    $('#contact-form')[0].reset();
                 })
                 .fail(function(data) {
                     console.warn("Error! Data: " + data.statusText);
-                    $('#alert-danger').show();
+                    $('.alert-danger').show();
                     // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                         //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                        $('#alert-success').show();               
+                        $('.alert-success').show();               
                     }
                 });
             });
