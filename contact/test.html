@@ -278,6 +278,9 @@
                     $('#postForm').blur(); 
                     $('.alert-success').show("slow");
                     $('#contact-form')[0].reset();
+                    setTimeout(function() {
+                        $('.alert-success').hide("slow");
+                    }, 4000);
                 })
                 .fail(function(data) {
                     console.warn("Error! Data: " + data.statusText);
@@ -285,13 +288,19 @@
                     $('#postForm').blur();
                     $('.alert-danger').show();
                     $('#contact-form')[0].reset();
+                    setTimeout(function() {
+                        $('.alert-danger').hide("slow");
+                    }, 4000);
                     // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                         //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
                         $('.glyphicon-refresh').remove();
                         $('#postForm').blur();
                         $('.alert-success').show("slow");
-                        $('#contact-form')[0].reset();               
+                        $('#contact-form')[0].reset();
+                        setTimeout(function() {
+                            $('.alert-success').hide("slow");
+                        }, 4000);
                     }
                 });
             });
