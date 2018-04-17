@@ -237,7 +237,7 @@
 
     <script>
         $(document).ready(function() {
-            .on('success.form', function(e) {
+            $( "#contact-form" ).submit(function(e) {
                 // Prevent form submission
                 e.preventDefault();
 
