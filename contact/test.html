@@ -273,7 +273,6 @@
                 // show the loading 
                 $('#postForm').prepend($('<span></span> ').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
-                    console.log("Success! Data: " + data);
                     $('.glyphicon-refresh').remove();
                     $('#postForm').blur(); 
                     $('.alert-success').show("slow");
@@ -283,7 +282,6 @@
                     }, 5000);
                 })
                 .fail(function(data) {
-                    console.warn("Error! Data: " + data.statusText);
                     $('.glyphicon-refresh').remove();
                     $('#postForm').blur();
                     $('.alert-danger').show();
