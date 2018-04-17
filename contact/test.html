@@ -271,7 +271,7 @@
                 var url = 'https://script.google.com/macros/s/AKfycbxhXIniJTvKW-Kn45WkOh8QtRWcBdFrq4WYzHgHVSJBR7KsrkU/exec';
 
                 // show the loading 
-                $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+                $('#postForm').prepend($('<span></span> ').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     console.log("Success! Data: " + data.statusText);
                     $('.glyphicon-refresh').remove();
@@ -280,7 +280,7 @@
                     $('#contact-form')[0].reset();
                     setTimeout(function() {
                         $('.alert-success').hide("slow");
-                    }, 4000);
+                    }, 5000);
                 })
                 .fail(function(data) {
                     console.warn("Error! Data: " + data.statusText);
@@ -290,7 +290,7 @@
                     $('#contact-form')[0].reset();
                     setTimeout(function() {
                         $('.alert-danger').hide("slow");
-                    }, 4000);
+                    }, 5000);
                     // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                         //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
@@ -300,7 +300,7 @@
                         $('#contact-form')[0].reset();
                         setTimeout(function() {
                             $('.alert-success').hide("slow");
-                        }, 4000);
+                        }, 5000);
                     }
                 });
             });
