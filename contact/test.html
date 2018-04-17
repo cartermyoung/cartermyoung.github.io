@@ -131,6 +131,19 @@
             margin-bottom: 20px;
             color: #999;
         }
+        
+        .glyphicon-refresh-animate {
+            -animation: spin .7s infinite linear;
+            -webkit-animation: spin2 .7s infinite linear;
+        }
+        @-webkit-keyframes spin2 {
+            from { -webkit-transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            from { transform: scale(1) rotate(0deg); }
+            to { transform: scale(1) rotate(360deg); }
+        }
         .required {
             color: red;
         }
@@ -262,18 +275,21 @@
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     console.log("Success! Data: " + data.statusText);
                     $('.glyphicon-refresh').remove();
+                    $('#postForm').blur(); 
                     $('.alert-success').show("slow");
                     $('#contact-form')[0].reset();
                 })
                 .fail(function(data) {
                     console.warn("Error! Data: " + data.statusText);
                     $('.glyphicon-refresh').remove();
+                    $('#postForm').blur();
                     $('.alert-danger').show();
                     $('#contact-form')[0].reset();
                     // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
                         //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
                         $('.glyphicon-refresh').remove();
+                        $('#postForm').blur();
                         $('.alert-success').show("slow");
                         $('#contact-form')[0].reset();               
                     }
