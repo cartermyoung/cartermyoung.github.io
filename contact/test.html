@@ -261,7 +261,7 @@
                 $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     console.log("Success! Data: " + data.statusText);
-                    .alert-success("display", "block");
+                    $('#alert-success').show("slow");
                     $('#contact-form').reset();
                 })
                 .fail(function(data) {
