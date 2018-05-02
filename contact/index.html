@@ -268,16 +268,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script>
         $(document).ready(function() {
             $( "#contact-form" ).submit(function(e) {
-                // Prevent form submission
                 e.preventDefault();
-
-                // Get the form instance
                 var $form = $(e.target);
-
-                // Use Ajax to submit form data
-                var url = 'https://script.google.com/macros/s/AKfycbxhXIniJTvKW-Kn45WkOh8QtRWcBdFrq4WYzHgHVSJBR7KsrkU/exec';
-
-                // show the loading 
+                var url = 'https://script.google.com/macros/s/AKfycbyjDQymwMCRMbs6RULNWfyamwROJ0ewl9HyFrmln5VVTKE1XQI/exec';
                 $('#postForm').prepend($('<span></span> ').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     $('.glyphicon-refresh').remove();
@@ -296,9 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     setTimeout(function() {
                         $('.alert-danger').hide("slow");
                     }, 5000);
-                    // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
                     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-                        //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
                         $('.glyphicon-refresh').remove();
                         $('#postForm').blur();
                         $('.alert-success').show("slow");
