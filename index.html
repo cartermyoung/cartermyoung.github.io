@@ -167,6 +167,15 @@
             text-align: left;
           }
         }
+        @media only screen 
+          and (min-device-width: 320px) 
+          and (max-device-width: 480px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: portrait) {
+            #myCarousel, #project-header {
+              display: none;
+            }
+        }
     </style>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -283,7 +292,7 @@
         <!-- /.row -->
 
         <!-- Projects -->
-        <div class="section-header" style="margin-bottom: 40px">
+        <div id="project-header" class="section-header" style="margin-bottom: 40px">
             <h2>Projects</h2>
         </div>
 
