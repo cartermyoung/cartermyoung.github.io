@@ -136,6 +136,9 @@
             -animation: spin .7s infinite linear;
             -webkit-animation: spin2 .7s infinite linear;
         }
+        space-left {
+            padding-left: 1em;
+        }
         @-webkit-keyframes spin2 {
             from { -webkit-transform: rotate(0deg); }
             to { -webkit-transform: rotate(360deg); }
@@ -271,8 +274,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 e.preventDefault();
                 var $form = $(e.target);
                 var url = 'https://script.google.com/macros/s/AKfycbyjDQymwMCRMbs6RULNWfyamwROJ0ewl9HyFrmln5VVTKE1XQI/exec';
-                var $space = $( ' ' );
-                $('#postForm').append($space, ('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+                $('#postForm').append($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate space-left'));
                 var jqxhr = $.post(url, $form.serialize(), function(data) {
                     $('.glyphicon-refresh').remove();
                     $('#postForm').blur(); 
