@@ -213,36 +213,6 @@
                 <p><a href="mailto:steamer1946@aim.com">steamer1946@aim.com</a></p>
                 <h3>LinkedIn</h3>
                 <p><a href="https://www.linkedin.com/in/cartermyoung/">Carter M. Young</a></p>
-                <h3>Contact form</h3>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="fullName">Full Name <span class="required">*</span></label>
-                        <div class="input-group">
-                            <input type="text" id="fullName" class="form-control" name="fullName" maxlength="60" placeholder="Full Name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email <span class="required">*</span></label>
-                        <div class="input-group">
-                            <input type="email" id="email" class="form-control" name="email" maxlength="100" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <div class="input-group">
-                           <textarea type="text" id="message" class="form-control" name="message" maxlength="400" placeholder="Message" rows="4" style="resize: vertical;" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default" id="postForm">Submit</button>
-                    </div>
-                </form>
-                <div class="alert alert-success" role="alert">
-                    <p>Your information has been submitted. Thank you.</p>
-                </div>
-                <div class="alert alert-danger" role="alert">
-                    <p>The was an error submitting your information. Please try again later or use another way to get in touch.</p>
-                </div>
             </div>
         </div>
         <!-- /.row -->
@@ -252,43 +222,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $( "#contact-form" ).submit(function(e) {
-                e.preventDefault();
-                var $form = $(e.target);
-                var url = 'https://script.google.com/macros/s/AKfycbyjDQymwMCRMbs6RULNWfyamwROJ0ewl9HyFrmln5VVTKE1XQI/exec';
-                $('#postForm').append($('<i></i>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate space-left'));
-                var jqxhr = $.post(url, $form.serialize(), function(data) {
-                    $('.glyphicon-refresh').remove();
-                    $('#postForm').blur(); 
-                    $('.alert-success').show("slow");
-                    $('#contact-form')[0].reset();
-                    setTimeout(function() {
-                        $('.alert-success').hide("slow");
-                    }, 5000);
-                })
-                .fail(function(data) {
-                    $('.glyphicon-refresh').remove();
-                    $('#postForm').blur();
-                    $('.alert-danger').show();
-                    $('#contact-form')[0].reset();
-                    setTimeout(function() {
-                        $('.alert-danger').hide("slow");
-                    }, 5000);
-                    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-                        $('.glyphicon-refresh').remove();
-                        $('#postForm').blur();
-                        $('.alert-success').show("slow");
-                        $('#contact-form')[0].reset();
-                        setTimeout(function() {
-                            $('.alert-success').hide("slow");
-                        }, 5000);
-                    }
-                });
-            });
-        });
-    </script>
 
 </body>
 
