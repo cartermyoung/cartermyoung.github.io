@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.cartermyoung.com/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/about/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/projects/gma-learning-commons/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/holy-ghost-holt-center/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/projects/mount-science-wing/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/projects/doylestown-presbyterian-church/</loc>
-  </url>
-  <url>
-    <loc>http://www.cartermyoung.com/projects/windward-harbor-reconstruction/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/projects/curtiss-wright-est-group/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/contact/</loc>
-  </url>
-  <url>
-    <loc>https://www.cartermyoung.com/pdfs/projects/gma-learning-commons/suburban-life-article.pdf</loc>
-  </url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://www.cartermyoung.com/projects/doylestown-presbyterian-church/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/curtiss-wright-est-group/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/gma-learning-commons/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/holy-ghost-holt-center/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/contact/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/mount-science-wing/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/about/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/projects/windward-harbor-reconstruction/</loc>
+</url>
+<url>
+<loc>https://www.cartermyoung.com/pdfs/projects/gma-learning-commons/suburban-life-article.pdf</loc>
+<lastmod>2019-08-31T12:43:46-04:00</lastmod>
+</url>
 </urlset>
