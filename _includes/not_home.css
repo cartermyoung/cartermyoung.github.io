@@ -1,0 +1,7 @@
+      /* Styles for all pages besides the homepage */
+      /* Control page width */
+      @media (min-width:992px), (min-width:1200px), (min-width:1400px) {
+        .container {
+          max-width: 740px;
+        }
+      }
