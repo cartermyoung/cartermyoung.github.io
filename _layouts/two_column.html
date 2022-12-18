@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+      <div class="container fw-light pb-5">
+        <h1 class="fw-light h2 pt-4 pb-3">{{ page.h1 }}</h1>
+        <div class="row">
+          <div class="col-md-8">
+{{ content }}
+          </div>
+          <div class="col-md-4">
+            <h2 class="fw-light h4">Get in touch</h2>
+            <ul>
+              <li><a href="tel:2156943654">Call 215-694-3654</a></li>
+              <li><a href="sms:2156943654">Text 215-694-3654</a></li>
+              <li><a href="mailto:steamer1946@aim.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/cartermyoung/">LinkedIn</a></li>
+            </ul>
+            <h2 class="fw-light h4">Share this page</h2>
+            <ul>
+              <li><a href="mailto:?subject={{ page.subject }}&amp;body={{ page.body }}%3A%20https%3A//www.cartermyoung.com{{ page.url }}">Email</a></li>
+              <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//www.cartermyoung.com{{ page.url }}" target="_linkedin">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/share.php?u=https://www.cartermyoung.com{{ page.url }}&amp;t={{ page.subject }}" target="_facebook">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
