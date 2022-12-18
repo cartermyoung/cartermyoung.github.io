@@ -1,0 +1,20 @@
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+    subnav:
+      - title: Episcopal Church of The Redeemer
+        url: /projects/redeemer-parish-house/
+      - title: Holy Ghost Preparatory School
+        url: /projects/holy-ghost-holt-center/
+      - title: Mount Saint Joseph Academy
+        url: /projects/mount-science-wing/
+      - title: Doylestown Presbyterian Church
+        url: /projects/doylestown-presbyterian-church/
+      - title: Curtiss-Wright EST Group
+        url: /projects/curtiss-wright-est-group/
+      - title: Windward Harbor Condominium
+        url: /projects/windward-harbor-reconstruction/
+  - title: Contact
+    url: /contact/
