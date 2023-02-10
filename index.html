@@ -3,6 +3,12 @@ title: Carter M. Young Obituary (1946 - 2023)
 layout: one_column
 excerpt: A father, grandfather, and successful businessman.
 h1: Obituary (1946 - 2023)
+slides: 4
+alt_tags:
+  - Carter
+  - Carter
+  - Carter
+  - Carter
 ---
 
         <p><img alt="Photograph of Carter M. Young" src="/images/homepage/carter.png" width="200"></p>
@@ -11,3 +17,24 @@ h1: Obituary (1946 - 2023)
         <p>Visitation 10 AM Friday at Upper Dublin Lutheran Church - <a href="https://udlc.org">udlc.org</a>; Service to follow at 11 AM.</p>
         <p>Interment private.</p>
         <p>In lieu of flowers, donations are appreciated. Committee to Benefit the Children - <a href="http://cbckids.org">cbckids.org</a></p>
+        <div id="photoCarousel" class="carousel carousel-fade slide pb-3" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">{% assign minus1 = page.slides | minus: 1 %}{% for indicator in (0..minus1) %}
+            <li data-bs-target="#photoCarousel" data-bs-slide-to="{{ indicator }}" aria-label="Slide {{ indicator }}"{% if indicator == 0 %} class="active" aria-current="true"{% endif %}></li>{% endfor %}
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">{% assign counter = 1 %}{% for tag in page.alt_tags %}
+            <div class="carousel-item{% if counter == 1 %} active{% endif %}">
+              <img alt="{{ tag }}" class="d-block w-100" src="/images/homepage/{{ counter }}.jpg">
+            </div>{% assign counter = counter | plus: 1 %}{% endfor %}
+          </div>
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
