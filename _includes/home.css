@@ -1,56 +1,7 @@
-      /* Homepage Styles */
-      /* Hero background image and size */
-      @media (min-width: 1200px) {
-        .hero {
-          background-image: url('../images/homepage/building.jpg');
-          background-repeat: no-repeat;
-          background-size: 100%
+      /* Obituary Page Custom Styles */
+      /* Control page width */
+      @media (min-width: 768px), (min-width:992px), (min-width:1200px), (min-width:1400px) {
+        .container {
+          max-width: 576px;
         }
       }
-      /* Center client logos and custom single column on mobile devices */
-      .logo {
-        text-align: center
-      }
-      @media (max-width: 320px) {
-        .row--custom>* {
-          flex: 0 0 auto;
-          width: 100%
-        }
-      }
-      /* Carousel Section (from Bootstrap custom carousel.css file) */
-      .carousel {
-        margin-bottom: 4rem
-      }
-      .carousel-caption {
-        bottom: 3rem;
-        z-index: 10
-      }
-      .carousel-item {
-        height: 32rem
-      }
-      .carousel-item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 32rem
-      }
-      @media (min-width: 40em) {
-        .carousel-caption p {
-          margin-bottom: 1.25rem;
-          font-size: 1.25rem;
-          line-height: 1.4;
-        }
-      }
-      /*
-      To hide projects section on mobile (would just need to add a projects id to that section)
-      @media only screen
-        and (min-device-width: 320px)
-        and (max-device-width: 480px)
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: portrait) {
-          #projects {
-            display: none;
-          }
-      }
-      */
